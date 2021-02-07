@@ -30,7 +30,7 @@ export class CryptoChartComponent implements OnInit {
   private svg: any;
   private line: any;
 
-  constructor(private ApidataService: ApidataService,) {}
+  constructor(private ApidataService: ApidataService) {}
 
     @HostListener('window:resize', ['$event'])
     onResize(event: any) {
