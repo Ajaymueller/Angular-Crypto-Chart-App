@@ -22,7 +22,7 @@ export class CryptoChartComponent implements OnInit {
   historicEthereumData: HistoricPrice[] = [];
   mergedData: HistoricPrice[] = [];
 
-  private margin = { top: 20, right: 20, bottom: 30, left: 50};
+  private margin = { top: 20, right: 20, bottom: 30, left: 90};
   private width: any;
   private height: any;
   private x: any;
@@ -30,11 +30,7 @@ export class CryptoChartComponent implements OnInit {
   private svg: any;
   private line: any;
 
-  constructor(private ApidataService: ApidataService,
-    private container: ElementRef) {  
-      this.width = 960 - this.margin.left - this.margin.right;
-      this.height = 500 - this.margin.top - this.margin.bottom;
-    }
+  constructor(private ApidataService: ApidataService,) {}
 
     @HostListener('window:resize', ['$event'])
     onResize(event: any) {
@@ -93,7 +89,7 @@ export class CryptoChartComponent implements OnInit {
     }
 
     private addXandYAxis() {
-      this.width = parseInt(d3.select("#chart").style("width")) - this.margin.left - this.margin.right - 40
+      this.width = parseInt(d3.select("#chart").style("width")) - this.margin.left - this.margin.right - 50
       this.height = parseInt(d3.select("#chart").style("height")) - this.margin.top - this.margin.bottom 
       this.x = d3Scale.scaleTime().range([0, this.width]);
       this.y = d3Scale.scaleLinear().range([this.height, 0])
@@ -115,7 +111,7 @@ export class CryptoChartComponent implements OnInit {
         .call(d3Axis.axisLeft(this.y));
       this.svg.append("text")
         .attr("transform", "rotate(-90)")
-        .attr("y", 0 - this.margin.left - 20)
+        .attr("y", 0 - this.margin.left)
         .attr("x",0 - (this.height / 2))
         .attr("dy", "1em")
         .text("USD")
