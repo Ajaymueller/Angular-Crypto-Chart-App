@@ -3,6 +3,10 @@ header {
     padding: 15px;
 }
 
+.nav {
+    border: 5px solid #2196f3;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -11,5 +15,6 @@ a {
 }
 
 a:hover {
-    background-color: #2076c7;
+    background-color: #FFFFFF;
+    color: black;
 }

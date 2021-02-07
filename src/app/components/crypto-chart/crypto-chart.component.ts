@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, Type, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ApidataService } from '../../services/apidata.service';
 import { HistoricPrice } from '../../models/historic.price'
 import { Source } from '../../models/source';
@@ -105,7 +105,7 @@ export class CryptoChartComponent implements OnInit {
       this.y.domain(d3Array.extent(data, (d) => d.close));
       this.svg.append('g')
         .attr('transform', 'translate(0,' + this.height + ')')
-        .call(d3Axis.axisBottom(this.x));
+        .call(d3Axis.axisBottom(this.x))
       this.svg.append('g')
         .attr('class', 'axis axis--y')
         .call(d3Axis.axisLeft(this.y));
