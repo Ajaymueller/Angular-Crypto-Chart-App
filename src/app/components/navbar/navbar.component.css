@@ -1,0 +1,15 @@
+header {
+    background-color: #2196f3;
+    padding: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 25px;
+}
+
+a:hover {
+    background-color: #2076c7;
+}
