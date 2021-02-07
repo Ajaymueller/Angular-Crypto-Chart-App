@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { HistoricDataResponse } from '../models/historic-date-response';
+import { HistoricDataResponse } from '../models/historic-data-response';
 import { Source } from '../models/source';
 
 @Injectable({
