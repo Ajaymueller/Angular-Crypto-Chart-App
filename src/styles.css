@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    font-size: 30px;
+    background-color:#151414;
+    color: white;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
