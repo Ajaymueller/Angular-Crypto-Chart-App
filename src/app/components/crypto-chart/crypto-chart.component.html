@@ -1,7 +1,10 @@
 <div class="chart-container">
     <div class="button-div">
+        <button type="button" (click)="changeChart('both')">View Both</button>
+        <button type="button" (click)="changeChart('bitcoin')">View Bitcoin</button>
+        <button type="button" (click)="changeChart('ethereum')">View Ethereum</button>
     </div>
-    <div>
-        <svg id="chart" ></svg>
+    <div class="svg-container">
+        <svg id="chart"></svg>
     </div>
 </div>
