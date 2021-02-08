@@ -4,7 +4,7 @@ Author: Aidan Mueller
 
 ## The brief 
 
-The aim of this project was to create a simple web application using Angular that retrieves data from the Crypto Compare API and manipulates that data to create a line chart. 
+The aim of this project was to create a simple web application using Angular that retrieves data from the Crypto Compare API and manipulates that data to create a line chart using D3.
 
 ## The approach 
 
@@ -18,7 +18,7 @@ This was my first project I have built using Angular, TypeScript, and D3 so thes
 
 ## What more could I have done
 
-I would like to have implemented some unit tests using Jasmine and Karma. The testing package that I am most familiar with is Jest, so this would also be new to me. I also would have liked to style the application more, and to perhaps enhance the usability and functionality of it. For example, I could have used a D3 transition when the graph changes from Bitcoin to Ethereum, and vice versa or I could I have implemented a tooltip that shows the price when the mouse hovers over the line chart. Also, I think I can make the app more mobile friendly. In addition to this, I could probably have created another service to store the logic of D3, then inject it into the component. I will bear this in mind for future projects.  
+I would like to have implemented some unit tests using Jasmine and Karma. The testing package that I am most familiar with is Jest, so this would also be new to me. I also would have liked to style the application more, and to perhaps enhance the usability and functionality of it. For example, I could have used a D3 transition when the graph changes from Bitcoin to Ethereum, and vice versa, or I could I have implemented a tooltip that shows the price when the mouse hovers over the line chart. Also, I think I can make the app more mobile friendly. In addition to this, I could probably have created another service to store the logic of D3, then inject it into the CryptoChart component. I will bear this in mind for future projects.  
 Lastly, I will definitely want to deploy this in the future using a personal GitLab server that I have access to. I did try to deploy it but faced some problems with the server that will need correcting at a later date. Altogether, this was an enjoyable project and I definitely feel more comfortable using D3 and Angular now. I fully intend to continue my learning with these technologies. 
 
 ## Screenshots of App
