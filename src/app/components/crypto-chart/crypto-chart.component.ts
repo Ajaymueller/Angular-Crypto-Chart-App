@@ -43,18 +43,18 @@ export class CryptoChartComponent implements OnInit {
     ngOnInit() {
       this.fetchBitcoinData();
     }
-  
-    changeChart(type: string) {
-      this.selectedType = type;
-      this.redrawChart();
-    }
-  
+
     createChart() {
       this.buildSvg();
       this.addXandYAxis();
       this.drawLineAndPath();
     }
   
+  
+    changeChart(type: string) {
+      this.selectedType = type;
+      this.redrawChart();
+    }
   
     redrawChart() {
       d3.selectAll("svg > *").remove();
@@ -89,12 +89,15 @@ export class CryptoChartComponent implements OnInit {
     }
 
     private addXandYAxis() {
+
       this.width = parseInt(d3.select("#chart").style("width")) - this.margin.left - this.margin.right - 50
       this.height = parseInt(d3.select("#chart").style("height")) - this.margin.top - this.margin.bottom 
       this.x = d3Scale.scaleTime().range([0, this.width]);
       this.y = d3Scale.scaleLinear().range([this.height, 0])
       this.x.domain(d3Array.extent(this.mergedData, (d) => new Date(d.time * 1000)));
+
       let data: HistoricPrice[] = [];
+
       if (this.selectedType === 'both') {
         data = this.mergedData;
       } else if (this.selectedType === 'ethereum') {
@@ -102,6 +105,7 @@ export class CryptoChartComponent implements OnInit {
       } else if (this.selectedType === 'bitcoin') {
         data = this.historicBitcoinData
       }
+
       this.y.domain(d3Array.extent(data, (d) => d.close));
       this.svg.append('g')
         .attr('transform', 'translate(0,' + this.height + ')')
@@ -112,7 +116,7 @@ export class CryptoChartComponent implements OnInit {
       this.svg.append("text")
         .attr("transform", "rotate(-90)")
         .attr("y", 0 - this.margin.left)
-        .attr("x",0 - (this.height / 2))
+        .attr("x", 0 - (this.height / 2))
         .attr("dy", "1em")
         .text("USD")
         .style("fill", "white")
@@ -120,6 +124,7 @@ export class CryptoChartComponent implements OnInit {
   
   
     private drawBitcoinLineGraph() {
+
       this.svg.append('path')
         .datum(this.historicBitcoinData)
         .attr('class', 'line')
@@ -136,7 +141,8 @@ export class CryptoChartComponent implements OnInit {
         .text("BTC");
     }
 
-  private drawEthereumLineGraph() {
+    private drawEthereumLineGraph() {
+      
       this.svg.append('path')
         .datum(this.historicEthereumData)
         .attr('class', 'line')

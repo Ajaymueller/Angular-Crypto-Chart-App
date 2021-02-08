@@ -18,7 +18,7 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
