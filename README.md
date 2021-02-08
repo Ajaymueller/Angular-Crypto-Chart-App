@@ -26,6 +26,9 @@ Lastly, I will definitely want to deploy this in the future using a personal Git
 ![Screenshot from 2021-02-08 14-06-23](https://user-images.githubusercontent.com/55413026/107230748-5a7f0d00-6a17-11eb-82ef-ccdb0f8ad121.png)
 ![Screenshot from 2021-02-08 14-06-27](https://user-images.githubusercontent.com/55413026/107230762-5e129400-6a17-11eb-89cf-dfeedc4c0a94.png)
 ![Screenshot from 2021-02-08 14-06-30](https://user-images.githubusercontent.com/55413026/107230776-61a61b00-6a17-11eb-8200-40019380ea9e.png)
+![Screenshot from 2021-02-08 14-06-44](https://user-images.githubusercontent.com/55413026/107231010-aaf66a80-6a17-11eb-87df-d900e1d5573a.png)
+![Screenshot from 2021-02-08 14-06-49](https://user-images.githubusercontent.com/55413026/107231019-ad58c480-6a17-11eb-9aa5-709dda142f44.png)
+![Screenshot from 2021-02-08 14-06-53](https://user-images.githubusercontent.com/55413026/107231026-afbb1e80-6a17-11eb-9201-95b42cef5258.png)
 
 
 
